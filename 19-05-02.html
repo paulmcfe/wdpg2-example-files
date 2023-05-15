@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 15.5: The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> Pseudo-Elements - Example</title>
+        <style>
+            ol {
+                line-height: 1.4;
+                list-style-type: none;
+                margin-left: -2.5rem;
+            }
+            
+            li {
+                counter-increment: my-counter;
+                margin-bottom: 0.6rem;
+            }
+            
+            li::before {
+                content: counter(my-counter);
+                background-color: steelblue;
+                border-radius: 50%;
+                color: white;
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin-right: 0.5rem;
+                padding: 0.25rem 0.65rem;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            The cascade hierarchy (see <a href="/2/lessons/19-7-0">Lesson 19.7</a>) in ascending order of importance:
+            <ol>
+                <li>User agent style sheet</li>
+                <li>User style sheet</li>
+                <li>External and internal author style sheets</li>
+                <li>Inline styles</li>
+            </ol>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 15.3: The Child Combinator - Example</title>
+        <style>
+            body {
+                font-family: Verdana, sans-serif;
+                line-height: 1.4;
+            }
+            
+            p {
+                color: darkblue;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            
+            div > p {
+                font-size: 1.25rem;
+                color: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contextual Selectors</h1>
+            <div>
+                <p>The Descendant Combinator</p>
+                <p>The Child Combinator</p>
+                    <section>
+                        <p>The First Child Pseudo-Class</p>
+                        <p>The Last Child Pseudo-Class</p>
+                        <p>The Nth Child Pseudo-Class</p>
+                    </section>
+                <p>The Sibling Combinator</p>
+            </div>
+    </body>
+</html>

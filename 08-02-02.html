@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 7.6: Positioning Elements - Try This</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                width: 600px;
+                font-family: Verdana, sans-serif;
+                line-height: 1.5;
+            }
+            
+            div {
+                margin: 1em;
+            }
+            
+            .watermark {
+                /* Write your CSS code below this line */
+            
+                color: rgba(255, 0, 0, 0.25);
+                font-size: 4.5em;
+                font-weight: bold;
+                letter-spacing: .25em;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>
+            When you use relative positioning to shift an element away from the default place it would have otherwise occupied in the rendered page, it’s crucial to remember that the area of the element’s original space is preserved by the browser. This means that the rest of the content still flows around that space, which might not be what you want.
+            </p>
+            <p class="watermark">
+                PREVIEW
+            </p>
+            </div>
+            <div>
+                Mind the gap
+            </div>
+    </body>
+</html>

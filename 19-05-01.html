@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 15.5: The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> Pseudo-Elements - Example</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 1rem;
+                text-indent: -1rem;
+            }
+            
+            li::before {
+                content:'\261e\00a0';
+                color: red;
+                font-size: 1.1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+                Here are some interesting characters to use in place of the standard bullets:
+            </div>
+            <ul>
+                <li>Circled bullet: &#x029bf;</li>
+                <li>Circled white bullet: &#x029be;</li>
+                <li>Rightwards arrow with loop: &#x021ac;</li>
+                <li>Black star: &#x02605;</li>
+                <li>White star: &#x02606;</li>
+                <li>Triangle bullet: &#x2023;</li>
+            </ul>
+    </body>
+</html>

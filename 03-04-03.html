@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 3.4: Creating Inline Containers - Try This</title>
+        <style>
+            span {
+                font-family: monospace;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            The basic form of any URL looks like this:
+            </p>
+            <pre>How://Who/Where/What</pre>
+            <p>
+            Let’s see what all this means:
+            </p>
+            <ul>
+                <li>How &mdash; The first part of the URL specifies how the data is going to be transferred. This is called the <dfn>protocol</dfn> and, luckily, mere mortals like you and I don’t need to concern ourselves with the guts of this stuff. All you need to know is which protocol each resource uses, which is straightforward. For example, the web uses something called HTTP. The “how” part of the URL is the protocol, followed by a colon (:) and two slashes (//). So, a web page URL always starts like this: <code>http://</code>.</li>
+                <li>Who &mdash; Calling the next part the “who” of the URL is, I admit, a bit of a misnomer because there’s no person involved. Instead, it’s the name of the server where the resource is located &mdash; this is called the <dfn>host name</dfn>. For example, the Web Design Playground is located on a host named <code>webdesignplayground.io</code>. To continue the URL, you tack this “who” part onto the end of the “how” part: <code>http://webdesignplayground.io</code>.</li>
+                <li>Where &mdash; The next part of the address specifies where the resource is located on the host. This generally means the directory in which the resource is stored; the directory might be something like <code>/www</code> or <code>/public/html</code>. The Web Design Playground is in the root directory, which is <code>/</code>. So now you append the directory onto the URL and then add another slash on the end, for good measure: <code>/</code>.</li>
+                <li>What &mdash; Almost there. The “what” part is the name of the file you want to reference. For a web page, you use the name of the document that contains the HTML code and text. The file containing the Wrb Design Playground is called <code>index.html</code>, so here’s the full URL: <code>http://webdesignplayground.io/index.html</code>.</li>
+            </ul>
+    </body>
+</html>

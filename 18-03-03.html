@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 14.3: Hosting Your Own Fonts - The Full <code>@font-face</code> Syntax</title>
+        <style>
+            @font-face {
+                font-family: 'Bree Serif';
+                src: url('/fonts/breeserif.eot');
+                src: url('/fonts/breeserif.eot?#iefix') format('embedded-opentype'),
+                     url('/fonts/breeserif.woff2') format('woff2'),
+                     url('/fonts/breeserif.woff') format('woff'),
+                     url('/fonts/breeserif.ttf') format('truetype'),
+                     url('/fonts/breeserif.svg#bree_serif') format('svg');
+            }
+            
+            ul {
+                font-family: 'Bree Serif';
+            }
+            
+            p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+                Here are some notes to bear in mind when using directories with the @font-face rule filenames:
+            <p>
+            <ul>
+                <li>If the font files reside in the same directory as the CSS file (or the HTML file that contains the CSS code), no directory is required. For example:<br>
+                url('breeserif.ttf')</li>
+                <li>If the font files reside in a subdirectory of the loction where the CSS (or HTML) file is stored, precede the filename with the directory name and a backslash (/). For example:<br>
+                url('fonts/breeserif.ttf')</li>
+                <li>If the font files reside in a subdirectory of the site's root directory, precede the filename with a backslash (/), the directory name, and then another backslash (/). For example:<br>
+            url('/fonts/breeserif.ttf')</li>
+            </ul>
+    </body>
+</html>

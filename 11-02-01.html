@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 9.1: Creating the Holy Grail Layout with Floats - Floating the Header</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body {
+                max-width: 30em;
+                margin: 1em;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            header {
+                border: 1px solid black;
+                padding: .25em 0;
+            }
+            header img {
+                float: left;
+                padding-left: 1em;
+            }
+            h1 {
+                float: left;
+                padding-left: .5em;
+                font-size: 2.5em;
+            }
+            .self-clear::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="self-clear">
+                <img src="/images/your-logo-here.png" alt="Our logo">
+                <h1>Site Title</h1>
+            </header>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 5.2: Working with Background Images - Adding a Hero Image</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            .hero-image {
+                height: 100vh;
+                background-image: url(/images/toronto.jpg);
+                background-position: center center;
+                background-size: cover;
+                color: hsl(58, 71%, 20%);
+            }
+            
+            .hero-image h1 {
+                padding-left: 5vw;
+                padding-top: 5vh;
+                font-family: Didot, Georgia, serif;
+                font-size: 72px;
+            }
+            
+            .hero-image h2 {
+                padding-left: 5vw;
+                width: 45%;
+                font-family: Didot, Georgia, serif;
+                font-size: 30px;
+            }
+            
+            .main {
+                padding: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero-image">
+                <h1>Welcome!</h1>
+                <h2>Are you ready to see Toronto in an entirely new way?</h2>
+            </div>
+            <div class="main">
+                The main page content goes here.
+            </div>
+    </body>
+</html>

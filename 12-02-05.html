@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.2: Working with Flexbox Items - Do you want the item to shrink if there’s not enough room?</title>
+        <style>
+            body {
+                margin: 1em;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: row;
+                width: 75vw;
+                outline: 3px solid orange;
+            }
+            
+            .item {
+                padding: .1em;
+                width: 50vw;
+                color: white;
+                font-family: "Verdana";
+                font-size: 3em;
+                text-align: center;
+                text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .itemA {
+                background-color: crimson;
+                flex-shrink: 1; /* itemA */
+                transition: flex-shrink 2s ease;
+            }
+            
+            .itemB {
+                background-color: indigo;
+                flex-shrink: 1; /* itemB */
+                transition: flex-shrink 2s ease;
+            }
+            
+            .itemC {
+                background-color: navy;
+                flex-shrink: 1; /* itemC */
+                transition: flex-shrink 2s ease;
+            }
+            
+            .itemD {
+                background-color: darkgreen;
+                flex-shrink: 1; /* itemD */
+                transition: flex-shrink 2s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="item itemA">A</div>
+                <div class="item itemB">B</div>
+                <div class="item itemC">C</div>
+                <div class="item itemD">D</div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 3.6: Aligning Paragraphs Horizontally - Example</title>
+        <style>
+            body {
+                width: 600px;
+            }
+            
+            h1, h2 {
+                text-align: center;
+            }
+            
+            div {
+                margin-bottom: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aligning Web Page Text</h1>
+            <h2>Notes From the Field</h2>
+            <div style="text-align: left;">
+            We read text (in English, anyway) from left to right. This means that when we get to the end of each line, to continue we must jump down one line and then scan to the beginning of that line. That leap-and-scan is most easily made when we "know" where the next line begins. That's why left-justified text is the easiest alignment to read.
+            </div>
+            <div style="text-align: right;">
+            Compare the left-justified text block above with this right-justified paragraph. In this case, when you reach the end of each line, jumping down to the next isn't a problem, but because the left side of the text block is set ragged, the beginning of each line isn't in a predictable place, which makes right-justified text a tad more difficult to read.
+            </div>
+            <div style="text-align: justify;">
+            Many books are set with justified paragraphs because it looks more elegant without the right-ragged edges. However, pro book designers use sophisticated layout software to manage things like hyphenation (particularly if the text includes a long word such as <i>honorificabilitudinitatibus</i>). These aren't available for the web, so it's often best not to justify.
+            </div>
+    </body>
+</html>

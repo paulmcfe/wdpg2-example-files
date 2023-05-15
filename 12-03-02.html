@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.3: Creating the Holy Grail Layout with Flexbox - The Navigation Bar</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                max-width: 50em;
+                min-height: 100vh;
+                margin: 1em;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            
+            nav {
+                padding: .5em;
+                border: 1px solid black;
+            }
+            
+            nav ul {
+                display: flex;
+                justify-content: flex-start;
+                list-style-type: none;
+                padding-left: .5em;
+            }
+            
+            nav li {
+                padding-right: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </nav>
+    </body>
+</html>

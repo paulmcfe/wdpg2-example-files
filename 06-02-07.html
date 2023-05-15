@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 5.2: Working with Background Images - Using Multiple Background Images</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            div {
+                background: 
+                    url(/images/tile.jpg) repeat-y left top,
+                    url(/images/tile.jpg) repeat-x left top,
+                    url(/images/tile.jpg) repeat-y right top,
+                    url(/images/tile.jpg) repeat-x left bottom,
+                    url(/images/dog.png) no-repeat center center;
+                width: 475px;
+                height: 450px;
+                padding: 3em 2em 0 3em;
+            }
+            
+            h3 {
+                font-size: 1.25em;
+            }
+            
+            p {
+                padding-top: 1em;
+                font-size: 1.1em;
+                line-height: 1.4;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>Walking the Dog, by Howard Nemerov</h3>
+            <p>
+            Two universes mosey down the street<br>
+            Connected by love and a leash and nothing else.<br>
+            Mostly I look at lamplight through the leaves<br>
+            While he mooches along with tail up and snout down,<br>
+            Getting a secret knowledge through the nose<br>
+            Almost entirely hidden from my sight.
+            </p><p>
+            We stand while he's enraptured by a bush<br>
+            Till I can't stand our standing any more<br>
+            And haul him off; for our relationship<br>
+            Is patience balancing to this side tug<br>
+            And that side drag; a pair of symbionts<br>
+            Contented not to think each other's thoughts.
+            </p>
+            </div>
+    </body>
+</html>

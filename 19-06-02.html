@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 15.6: Understanding Inheritance - Try This</title>
+        <style>
+            body {
+                max-width: 560px;
+            }
+            
+            div > code {
+                font-size: 1.2rem;
+            }
+            
+            div > div {
+                font-size: 0.9rem;
+                margin-top: 0.25rem
+            }
+            
+            .intro {
+                color: saddlebrown;
+                font-size: 1.1rem;
+                line-height: 1.4;
+            }
+            
+            /* Add your CSS rule below this line */
+        </style>
+    </head>
+    <body>
+        <h1>
+                The Limits of Inheritance
+            </h1>
+            <div class="intro">
+            Why don’t <em>all</em> CSS properties inherit their parent’s styles<sup>*</sup>? Because in some cases it would simply lead to weird or nonsensical results. For example, if you apply a border around, say, a <code>div</code> element, it would look odd indeed to apply the same border to a child <code>span</code> or <code>strong</code> element. Similarly, applying, say, a <code>p</code> element’s <code>width</code> value to a child <code>em</code> element doesn’t make sense.
+                <div>
+                    <sup>*</sup> <a href="https://www.w3.org/TR/REC-CSS2/propidx.html">This W3C page</a> tells you which styles don’t inherit.
+                </div>
+            </div>
+    </body>
+</html>

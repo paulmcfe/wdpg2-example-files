@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.2: Working with Flexbox Items - Do you want the item to grow if there’s extra room?</title>
+        <style>
+            body {
+                margin: 1em;
+            }
+            
+            .container {
+                margin-top: 3em;
+                display: flex;
+                flex-direction: row;
+                outline: 3px solid orange;
+            }
+            
+            .item {
+                padding: .1em;
+                color: white;
+                font-family: "Verdana";
+                font-size: 4em;
+                text-align: center;
+                text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .itemA {
+                background-color: crimson;
+                flex-grow: 0; /* itemA */
+                transition: flex-grow 2s ease;
+            }
+            
+            .itemB {
+                background-color: indigo;
+                flex-grow: 0; /* itemB */
+                transition: flex-grow 2s ease;
+            }
+            
+            .itemC {
+                background-color: navy;
+                flex-grow: 0; /* itemC */
+                transition: flex-grow 2s ease;
+            }
+            
+            .itemD {
+                background-color: darkgreen;
+                flex-grow: 0; /* itemD */
+                transition: flex-grow 2s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="item itemA">A</div>
+                <div class="item itemB">B</div>
+                <div class="item itemC">C</div>
+                <div class="item itemD">D</div>
+            </div>
+    </body>
+</html>

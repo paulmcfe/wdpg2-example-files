@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 9.1: Creating the Holy Grail Layout with Floats - Floating the Navigation Bar</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body {
+                max-width: 30em;
+                margin: 1em;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            nav {
+                border: 1px solid black;
+                padding: .5em;
+            }
+            nav ul {
+                list-style-type: none;
+            }
+            nav li {
+                float: left;
+                padding-right: 1.5em;
+            }
+            .self-clear::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="self-clear">
+                <ul>
+                    <li>Home</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </nav>
+    </body>
+</html>

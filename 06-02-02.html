@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 5.2: Working with Background Images - Controlling the Background Repeat</title>
+        <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-size: 100%;
+            }
+            
+            div {
+                background-image: url(/images/bg.png);
+                background-repeat: repeat;
+                width: 500px;
+                height: 200px;
+                padding: .25em 1em;
+                font-size: 1.4em;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+                <h1>
+                    Tiling
+                </h1>
+                <p>
+                    When you add a background image, the browser doesn’t just add the image once and move on to the next task. Instead, it takes the image and repeats it until it fills the entire parent block element, a process known as <i>tiling</i>.
+                </p>
+            </div>
+    </body>
+</html>

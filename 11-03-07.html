@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 9.2: Creating the Holy Grail Layout with Inline Blocks - Holy Grail with Two Sidebars</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body {
+                max-width: 50em;
+                font-family: Georgia, serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            header {
+                padding:  .5em 0 .1em 1em;
+            }
+            header h1 {
+                display: inline-block;
+                padding-left: .5em;
+                font-size: 2.5em;
+            }
+            nav {
+                color: #222;
+                padding: .5em;
+                text-transform: uppercase;
+            }
+            nav ul {
+                list-style-type: none;
+                padding-left: .5em;
+            }
+            nav li {
+                display: inline-block;
+                padding-right: 1.5em;
+            }
+            .aside-left {
+                display: inline-block;
+                vertical-align: top;
+                width: 25%;
+                padding: 1em;
+            }
+            article {
+                display: inline-block;
+                padding: 1em;
+                width: 50%;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            article p {
+                margin-bottom: 1em;
+            }
+            .aside-right {
+                display: inline-block;
+                vertical-align: top;
+                width: 25%;
+                padding: 1em;
+            }
+            h3 {
+                font-size: 1.25em;
+                margin-bottom: .5em;
+            }
+            footer {
+                padding: 1em;
+            }
+            
+            /* BACKGROUND COLORS */
+            header {
+                background-color: #6fa8dc;
+                background-image: -webkit-linear-gradient(top, #cfe2f3 0%, #6fa8dc 100%);
+                background-image: linear-gradient(to bottom, #cfe2f3 0%, #6fa8dc 100%);
+            }
+            
+            nav {
+                background-color: #e06666;
+                background-image: -webkit-linear-gradient(top, #f4cccc 0%, #e06666 100%);
+                background-image: linear-gradient(to bottom, #f4cccc 0%, #e06666 100%);
+            
+            }
+            
+            article {
+                background-color: white;
+            }
+            
+            aside, main {
+                background-color: #b4a7d6;
+            }
+            
+            footer {
+                background-color: #b6d7a8;
+                background-image: -webkit-linear-gradient(top, #d9ead3 0%, #b6d7a8 100%);
+                background-image: linear-gradient(to bottom, #d9ead3 0%, #b6d7a8 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+                <img src="/images/your-logo-here.png" alt="Our logo">
+                <h1>Site Title</h1>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </nav>    
+            
+            <main>
+                <aside class="aside-left">
+                    <h3>Left Sidebar</h3>
+                    <p>
+                        Left paragraph
+                    </p>
+                </aside><article>
+                    <h2>
+                        Article Title
+                    </h2>
+                    <p>
+                    Article paragraph 1
+                    </p>
+                    <p>
+                    Article paragraph 2
+                    </p>
+                </article><aside class="aside-right">
+                    <h3>Right Sidebar</h3>
+                    <p>
+                        Right paragraph
+                    </p>
+                </aside> 
+            </main>
+            
+            <footer>
+                <p>
+                    Footer paragraph
+                </p>
+            </footer>
+    </body>
+</html>

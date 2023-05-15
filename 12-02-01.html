@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.2: Working with Flexbox Items - Example</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 2em;
+                font-family: Verdana, sans-serif;
+                background-color: #14662d;
+            }
+            
+            .dictionary-container {
+                list-style-type: none;
+                padding: 2em;
+                max-width: 40em;
+                border-radius: .25em;
+                background-color: white;
+            }
+            
+            .dictionary-item {
+                display: flex;
+                padding: 1em .5em;
+            }
+            
+            .dictionary-item:not(:last-child) {
+                border-bottom: 1px solid #ccc;
+            }
+            
+            .dictionary-image {
+                flex-shrink: 0;
+            }
+            
+            .dictionary-image img {
+                border-radius: 10px;
+                height: 80px;
+                width: 80px;
+            }
+            
+            .dictionary-entry {
+                flex-grow: 1;
+                padding-left: 1em;
+            }
+            
+            .dictionary-entry h4 {
+                color: #333;
+                font-size: 1.5em;
+            }
+            
+            .dictionary-entry p {
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="dictionary-container">
+                <li class="dictionary-item">
+                    <div class="dictionary-image">
+                        <img src="/images/animalpath.jpg" alt="Photo of an path">
+                    </div>
+                    <div class="dictionary-entry">
+                        <h4>animal path</h4>
+                        <p>A footpath or track made by the constant and long-term walking of animals.</p>
+                    </div>
+                </li>
+                <li class="dictionary-item">
+                    <div class="dictionary-image">
+                        <img src="/images/bridleway.jpg" alt="Photo of a brideway path">
+                    </div>
+                    <div class="dictionary-entry">
+                        <h4>bridleway</h4>
+                        <p>A footpath that is also suitable for a horse and rider.</p>
+                    </div>
+                </li>
+                <li class="dictionary-item">
+                    <div class="dictionary-image">
+                        <img src="/images/coffintrail.jpg" alt="Photo of a coffin trail path">
+                    </div>
+                    <div class="dictionary-entry">
+                        <h4>coffin trail</h4>
+                        <p>A footpath used for transporting a coffin to a cemetary for burial.</p>
+                    </div>
+                </li>
+                <li class="dictionary-item">
+                    <div class="dictionary-image">
+                        <img src="/images/desireline.jpg" alt="Photo of a desire line path">
+                    </div>
+                    <div class="dictionary-entry">
+                        <h4>desire line</h4>
+                        <p>An informal path that pedestrians prefer to take to get from one location to another rather than using a sidewalk or other official route.</p>
+                    </div>
+                </li>
+            </ul>
+    </body>
+</html>

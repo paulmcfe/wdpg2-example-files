@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 13.1: Placing Items Within the Grid - Example</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: repeat(5, 100px);
+                grid-template-rows: repeat(3, 150px);
+            }
+            .item {
+                padding: .1em;
+                color: white;
+                font-family: Didot, serif;
+                font-size: 5em;
+                text-align: center;
+                text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+            }
+            .itema {
+                background-color: tomato;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 1;  
+            }
+            .itemb {
+                background-color: mediumorchid;
+                grid-column-start: 3;
+                grid-column-end: span 3;
+                grid-row-start: 1;
+                grid-row-end: 1;  
+            }
+            .itemc {
+                background-color: royalblue;
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: end;  
+            }
+            .itemd {
+                background-color: mediumseagreen;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: end;  
+            }
+            .iteme {
+                background-color: orange;
+                grid-column-start: 4;
+                grid-column-end: span 2;
+                grid-row-start: 2;
+                grid-row-end: 2;  
+            }
+            .itemf {
+                background-color: dimgray;
+                grid-column-start: 4;
+                grid-column-end: span 2;
+                grid-row-start: 3;
+                grid-row-end: 3;  
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="item itema">a</div>
+                <div class="item itemb">b</div>
+                <div class="item itemc">c</div>
+                <div class="item itemd">d</div>
+                <div class="item iteme">e</div>
+                <div class="item itemf">f</div>
+            </div>
+    </body>
+</html>

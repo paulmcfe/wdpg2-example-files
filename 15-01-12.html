@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating a Photo Gallery - Adding Captions, Part 2</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                line-height: 1.3;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                min-height: 100vh;
+                font-family: Optima, Calibri, sans-serif;
+                background-color: #221900;
+                color: #ecd078;
+            }
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em 0;
+                width: 100%;
+                background-color: #542437;
+            }
+            h1 {
+                padding-left: .5em;
+                font-family: cursive;
+                font-size: 3em;
+                font-weight: 400;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                width: 100%;
+                background-color: inherit;
+            }
+            nav ul {
+                display: flex;
+                list-style-type: none;
+            }
+            nav li {
+                padding: 1em 2.5em;
+                text-transform: uppercase;
+            }
+            .current-page {
+                padding: .75em;
+                background-color: #ecd078;
+                color: #221900;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #d95b43;
+                text-decoration: underline;
+            }
+            main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                flex-grow: 1;
+                max-width: 960px;
+                font-family: Optima, Calibri, sans-serif;
+                padding-bottom: 3.5em;
+            }
+            footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-transform: uppercase;
+                background-color: #542437;
+            }
+            footer p {
+                padding: 0 1.5em;
+            }
+            .img-thumbnail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .img-thumbnail p {
+                padding-bottom: 1em;
+            }
+            .image-thumbnail {
+                position: relative;
+                cursor: pointer;
+                margin-left: 1em;
+                margin-bottom: 1em;
+                width: 300px;
+                height: 200px;
+            }
+            .image-caption {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 300px;
+                height: 200px;
+                opacity: 0;
+                background-color: rgba(32, 32, 32, 0.75);
+                color: #ecd078;
+            }
+            .image-caption:hover {
+              opacity: 1;
+            }
+            .caption-title {
+              padding-bottom: .5em;
+              font-size: 1.2em;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            .caption-text {
+              font-size: .8em;
+              text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+                <img src="/images/ampersand-photography.png" alt="Ampersand Photography logo">
+                <h1>Ampersand Photography</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><span class="current-page">Gallery 1</span></li>
+                    <li><a href="#">Gallery 2</a></li>
+                    <li><a href="#">Gallery 3</a></li>
+                    <li><a href="#">Gallery 4</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="image-thumbnail">
+                    <a href="/images/image01.jpg"  target="_blank"><img src="/images/image01-thumbnail.jpg" alt="Thumbnail version of a photo of a sculpture of ladies gossiping"></a>
+                    <figure>
+                        <figcaption class="image-caption">
+                            <p class="caption-title">Les Chuchoteuses</p>
+                            <p class="caption-text">Sculpture of ladies gossiping in Montreal</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="image-thumbnail">
+                    <a href="/images/image02.jpg"  target="_blank"><img src="/images/image02-thumbnail.jpg" alt="Thumbnail version of a macro photo showing an ant on a flower"></a>
+                    <figure>
+                        <figcaption class="image-caption">
+                            <p class="caption-title">Flower & Ant</p>
+                            <p class="caption-text">To an ant, a flower is an entire world<br>(click to enlarge)</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="image-thumbnail">
+                    <a href="/images/image03.jpg"  target="_blank"><img src="/images/image03-thumbnail.jpg" alt="Thumbnail version of a photo showing a bee on a flower"></a>
+                    <figure>
+                        <figcaption class="image-caption">
+                            <p class="caption-title">Busy Bee</p>
+                            <p class="caption-text">A bee bobbing for nectar<br>(click to enlarge)</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="image-thumbnail">
+                    <a href="/images/image04.jpg"  target="_blank"><img src="/images/image04-thumbnail.jpg" alt="Thumbnail version of a photo showing a bird in flight"></a>
+                    <figure>
+                        <figcaption class="image-caption">
+                            <p class="caption-title">On the Wing</p>
+                            <p class="caption-text">An unknown yellow bird, mid-flight<br>(click to enlarge)</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="image-thumbnail">
+                    <a href="/images/image05.jpg"  target="_blank"><img src="/images/image05-thumbnail.jpg" alt="Thumbnail version of a photo showing a Spiderman toy on a chair"></a>
+                    <figure>
+                        <figcaption class="image-caption">
+                            <p class="caption-title">Sad Spiderman</p>
+                            <p class="caption-text">Doing whatever a spider can<br>(click to enlarge)</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="image-thumbnail">
+                    <a href="/images/image06.jpg"  target="_blank"><img src="/images/image06-thumbnail.jpg" alt="Thumbnail version of a photo showing a horse-and-cart toy"></a>
+                    <figure>
+                        <figcaption class="image-caption">
+                            <p class="caption-title">Horse & Cart</p>
+                            <p class="caption-text">A horse-and-cart toy, ready to move out<br>(click to enlarge)</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; Ampersand Photography</p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 6.4: Using Class Selectors - Fix Me</title>
+        <style>
+            .mainbullet {
+                color: brown;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>An Overly-Fussy List of CSS Class Name Restrictions</h3>
+            <ul>
+            <li class="mainBullet">The class name can begin with a letter, underscore (_), or hyphen (-).</li>
+            <li class="mainBullet">Class names beginning with an underscore or hyphen are typically reserved for browser-specific extensions.</li>
+            <li class="mainBullet">If you do use a hyphen, the second character must be a letter or underscore.</li>
+            <li class="mainBullet">The rest of the class name can use any combination of letters, numbers, hyphens, or underscores.</li>
+            <li class="mainBullet">The name must be at least two characters long.</li>
+            <li class="mainBullet">Technically, you <em>can</em> use special characters in the <code>class</code> attribute, but to refer to a special character in your CSS class name you must “escape” the character by preceding it with a forward slash (\). For example, if you use <code>class="this&that"></code> in your HTML, your CSS class must be <code>.this\&that</code>.
+            </ul>
+    </body>
+</html>

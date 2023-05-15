@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.2: Working with Flexbox Items - Try This</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                min-height: 100vh
+            }
+            
+            main {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+            
+            aside {
+                flex: 1;
+                /* Add your CSS code below this line */
+            
+                padding: 1em;
+                background-color: cornflowerblue;
+            }
+            
+            section {
+                flex: 2;
+                /* Add your CSS code below this line */
+            
+                padding: 1em;
+                background-color: plum;
+            }
+            
+            article {
+                flex: 4;
+                padding: 1em;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+                <aside>
+                    <h1>Aside</h1>
+                </aside>
+                <section>
+                    <h1>Section</h1>
+                </section>
+                <article>
+                    <h1>Article</h1>
+                </article>
+            </main>
+    </body>
+</html>

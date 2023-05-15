@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.3: Creating the Holy Grail Layout with Flexbox - The Complete Holy Grail Layout</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                max-width: 50em;
+                min-height: 100vh;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            
+            header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #6fa8dc;
+                padding: 1em;
+            }
+            
+            header img {
+                flex-shrink: 0;
+            }
+            
+            h1 {
+                flex-grow: 1;
+                padding-left: .5em;
+                font-size: 2.5em;
+            }
+            
+            nav {
+                padding: .5em;
+                text-transform: uppercase;
+                background-color: #e06666;
+            }
+            
+            nav ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                list-style-type: none;
+                padding-left: .5em;
+            }
+            
+            nav li {
+                padding-right: 1.5em;
+            }
+            
+            main {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+            
+            article {
+                flex-grow: 3;
+                padding: 1em;
+            }
+            
+            h2 {
+                font-size: 2em;
+            }
+            
+            article p {
+                margin-bottom: 1em;
+            }
+            
+            aside {
+                flex-grow: 1;
+                padding: 1em;
+                background-color: #b4a7d6;
+            }
+            
+            h3 {
+                font-size: 1.25em;
+                margin-bottom: .5em;
+            }
+            
+            footer {
+                padding: 1em;
+                background-color: #b6d7a8;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+                <img src="/images/your-logo-here.png" alt="Our logo">
+                <h1>Site Title</h1>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </nav>    
+            
+            <main>
+                <article>
+                    <h2>
+                        Article Title
+                    </h2>
+                    <p>
+                    Article paragraph 1
+                    </p>
+                    <p>
+                    Article paragraph 2
+                    </p>
+                    
+                </article>
+                	<aside>
+                    <h3>Sidebar Title</h3>
+                    <p>
+                        Sidebar paragraph
+                    </p>
+                </aside>
+               
+            </main>
+            <footer>
+                <p>
+                    Footer paragraph
+                </p>
+            </footer>
+    </body>
+</html>

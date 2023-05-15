@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 9.1: Creating the Holy Grail Layout with Floats - Floating the Main Content</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body {
+                max-width: 40em;
+                margin: 1em;
+                font-family: Georgia, serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            article {
+                float: left;
+                padding: 1em;
+                width: 75%;
+                border: 1px solid black;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            article p:last-child {
+                margin-top: 1em;
+            }
+            aside {
+                float: left;
+                width: 25%;
+                padding: .5em;
+                border: 1px solid black;
+            }
+            h3 {
+                font-size: 1.25em;
+                margin-top: .5em;
+                margin-bottom: .5em;
+            }
+            .self-clear::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="self-clear">
+                <article>
+                    <h2>
+                        Article Title
+                    </h2>
+                    <p>
+                    Article paragraph 1
+                    </p>
+                    <p>
+                    Article paragraph 2
+                    </p>
+                </article>
+                <aside>
+                    <h3>Sidebar Title</h3>
+                    <p>
+                        Sidebar paragraph
+                    </p>
+                </aside>
+            </main>
+    </body>
+</html>

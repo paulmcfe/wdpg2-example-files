@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.2: Working with Flexbox Items - Do you want to override an item’s alignment?</title>
+        <style>
+            body {
+                margin: 1em;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                height: 75vh;
+                width: 75vw;
+                outline: 3px solid orange;
+            }
+            
+            .item {
+                padding: .1em;
+                color: white;
+                font-family: "Verdana";
+                font-size: 1em;
+                text-align: center;
+            }
+            
+            .itemA {
+              background-color: crimson;
+              padding-top: 1em;
+              padding-bottom: 1em;
+            }
+            
+            .itemB {
+              background-color: indigo;
+              padding-top: 1.5em;
+              padding-bottom: 2em;
+            }
+            
+            .itemC {
+              background-color: navy;
+              padding-top: .5em;
+              padding-bottom: .5em;
+            }
+            
+            .itemD {
+              background-color: darkgreen;
+              padding-top: 1.5em;
+              padding-bottom: 2em;
+            }
+            
+            .itemE {
+              align-self: auto;
+              background-color: saddlebrown;
+              padding-top: 1em;
+              padding-bottom: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                    <div class="item itemA">Do you want the item to grow if there's extra room?</div>
+                    <div class="item itemB">Do you want the item to shrink if there's not enough room?</div>
+                    <div class="item itemC">Do you want to suggest an initial size for an item?</div>
+                    <div class="item itemD">Do you want to change an item's order?</div>
+                    <div class="item itemE">Do you want to override an item's alignment?</div>
+                </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 7.5: Floating Elements - Floating a Pull Quote</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            body {    
+                width: 550px;
+                color: #444;
+                font-family: Georgia, serif;
+                font-size: 1.1em;
+                line-height: 1.4;
+            }
+            
+            p {
+                margin: 1em;
+                padding: 1em;
+            }
+            
+            .pullquote {
+                float: right;
+                width: 50%;
+                margin: 1.25em 0 1em .25em;
+                padding-top: .5em;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                font-size: 1.05em;
+                font-style: italic;
+                color: #666;
+            }
+            
+            .pullquote::before {
+                content: "\0201c"; 
+                float: left; 
+                padding: .1em .2em .4em 0;
+                font-size: 5em;
+                line-height: .45em; 
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            A <i>pull quote</i> is a short excerpt or an important phrase or quotation that has been copied (“pulled”) from a piece of text and displayed as a separate element between or, more often, to one side of the regular text.
+            <span class="pullquote">
+            It’s the job of the pull quote to entice the would-be reader.
+            </span>
+            It’s important that the pull quote be styled in a way that not only makes it stand apart from the regular text (with, for example, a different font size, style, or color), but also makes it stand out for the reader. After all, it’s the job of the pull quote to entice the would-be reader and create a desire to read the article.
+            </p>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.1: Working with Flexbox Containers - Do you want the items to wrap?</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                outline: 3px solid orange;
+            }
+            
+            .item {
+                width: 25vw;
+                padding: .75em;
+                color: white;
+                font-family: "Verdana";
+                font-size: 1.5em;
+                text-align: center;
+            }
+            
+            .itemA {
+                background-color: crimson;
+            }
+            
+            .itemB {
+                background-color: indigo;
+            }
+            
+            .itemC {
+                background-color: navy;
+            }
+            
+            .itemD {
+                background-color: darkgreen;
+            }
+            
+            .itemE {
+                background-color: saddlebrown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="item itemA">
+                    In which direction do you want the container to run?
+                </div>
+                <div class="item itemB">
+                    How do you want the items arranged along the main axis?
+                </div>
+                <div class="item itemC">
+                    How do you want the items arranged along the cross axis?
+                </div>
+                <div class="item itemD">
+                    Do you want the items to wrap?
+                </div>
+                <div class="item itemE">
+                    How do you want multiple lines arranged along the cross axis?
+                </div>
+            </div>
+    </body>
+</html>

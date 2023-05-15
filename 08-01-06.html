@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 7.5: Floating Elements - Floating a Drop Cap</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            body {    
+                width: 550px;
+                color: #444;
+                font-family: Georgia, serif;
+                font-size: 1.1em;
+                line-height: 1.4;
+            }
+            
+            div {
+                margin: 1em;
+                padding: 1em;
+            }
+            
+            .first-paragraph::first-letter { 
+                float: left; 
+                padding-top: .1em; 
+                padding-right: .1em; 
+                color: darkred;
+                font-size: 5em;  
+                line-height: .6em; 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+               <p class="first-paragraph">
+               Starting an article doesn’t have to be boring! Get your text off to a great beginning by rocking the opening paragraph with a giant first letter. You can use either a <i>raised cap</i> (also called a <i>stick-up cap</i> or simply an <i>initial</i>) that sits on the baseline, or you can use a <i>drop cap</i> that sits below the baseline and nestles into the text.
+                </p>
+            </div>
+    </body>
+</html>

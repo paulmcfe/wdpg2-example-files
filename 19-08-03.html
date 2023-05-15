@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 15.8: Introducing Specificity - Test Yourself</title>
+        <style>
+            body {
+                font-size: 1.5em;
+                line-height: 1.3;
+                max-width: 500px;
+            }
+            
+            div .first-paragraph::first-line {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+                <p class="first-paragraph">
+                “The different weight of selectors is usually the reason why your CSS rules don't apply to some elements, although you think they should. To minimize the time you spend bug hunting, you need to understand how browsers interpret your code. And to understand that, you need to have a firm understanding of how specificity works.” <br>—Vitaly Friedman
+                </p>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 13.1: Introducing the fr Unit - Using fr to set a row's height</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 100px 200px 300px;
+                grid-template-rows: 100px 150px;
+            }
+            .item {
+                padding: .1em;
+                color: white;
+                font-family: Didot, serif;
+                font-size: 4.35em;
+                text-align: center;
+                text-shadow: 2.5px 2.5px 0 rgba(0, 0, 0, 0.2);
+            }        
+            .itema {
+                background-color: tomato;
+            }
+            .itemb {
+                background-color: mediumorchid;
+            }
+            .itemc {
+                background-color: royalblue;
+            }
+            .itemd {
+                background-color: mediumseagreen;
+            }
+            .iteme {
+                background-color: orange;
+            }
+            .itemf {
+                background-color: dimgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="item itema">a</div>
+                <div class="item itemb">b</div>
+                <div class="item itemc">c</div>
+                <div class="item itemd">d</div>
+                <div class="item iteme">e</div>
+                <div class="item itemf">f</div>
+            </div>
+    </body>
+</html>

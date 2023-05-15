@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 7.4: Controlling the Margins - Negative Margins</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                margin: 1em;
+                width: 850px;
+                font-family: Verdana, sans-serif;
+                font-size: 1.2em;
+                line-height: 1.4;
+            }
+            
+            .overlapping-header {
+                padding: 0.5em;
+                margin-top: 1em;
+                margin-left: 1.5em;
+                width: 8em;
+                position: relative;
+                z-index: 1;
+                color: yellow;
+                background-color: #333;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .quotations {
+                margin-top: -1em;
+                padding: 1.5em 1.5em 0.5em 1.5em;
+                color: #eee;
+                background-color: #999;
+            }
+            
+            blockquote {
+                margin-bottom: 1em;
+        </style>
+    </head>
+    <body>
+        <h1>
+                Negative Margins
+            </h1>
+            <div class="overlapping-header">
+                quotations
+            </div>
+            <div class="quotations">
+                <blockquote>
+                “All of the margin properties can be assigned negative values. When this is done, an adjacent margin can be effectively ‘canceled out’ to any degree. Given a large enough negative margin applied to a large enough element, the affected adjacent element can even be <em>overlapped</em>.” —World Wide Web Consortium
+                </blockquote>
+                <blockquote>
+                “Out of all the CSS concepts designers have ever used, an award probably needs to be given to the use of Negative Margins as being the most least talked about method of positioning. It’s like an online taboo—everyone’s doing it, yet no one wants to talk about it.” —John Imbong
+                </blockquote>
+                <blockquote>
+                “Despite its ‘hackish’ reputation, negative margins are allowed by the specification. If applied with care and deep understanding, they produce valid code.” —Marta Sztybor
+                </blockquote>
+            </div>
+    </body>
+</html>

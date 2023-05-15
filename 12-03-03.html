@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.3: Creating the Holy Grail Layout with Flexbox - The Main Content</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                max-width: 50em;
+                min-height: 100vh;
+                margin: 1em;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            
+            main {
+                display: flex;
+                flex-grow: 1;
+            }
+            
+            article {
+                flex-grow: 3;
+                padding: 1em;
+                border: 1px solid black;
+            }
+            
+            h2 {
+                font-size: 2em;
+            }
+            
+            article p {
+                margin-bottom: 1em;
+            }
+            
+            aside {
+                flex-grow: 1;
+                padding: 1em;
+                border: 1px solid black;
+            }
+            
+            h3 {
+                font-size: 1.25em;
+                margin-bottom: .5em;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+                <article>
+                    <h2>
+                        Article Title
+                    </h2>
+                    <p>
+                    Article paragraph 1
+                    </p>
+                    <p>
+                    Article paragraph 2
+                    </p>
+                </article>
+                <aside>
+                    <h3>Sidebar Title</h3>
+                    <p>
+                        Sidebar paragraph
+                    </p>
+                </aside>
+            </main>
+    </body>
+</html>

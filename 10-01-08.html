@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating a Landing Page - The Product Testimonials</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                line-height: 1.3;
+            }
+            
+            body {
+                font-family: Optima, Calibri, sans-serif;
+            }
+            
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                clear: both;
+            }
+            
+            .container::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            
+                
+            .header {
+                background: url(/images/landing-page-header-bg.jpg);
+                background-attachment: fixed;
+                background-position: right center;
+                background-size: cover;
+                padding-bottom: 1em;
+            }
+            
+            .header-image {
+                float: left;
+                width: 33%;
+                margin-top: 3em;
+                padding-right: 3em;
+                text-align: right;
+            }
+            
+            .header-info {
+                float: right;
+                width: 67%;
+                margin-top: 4em;
+                padding-left: 1em;
+                color: white;
+            }
+            
+            .surtitle {
+                font-weight: bold;
+                font-variant: small-caps;
+            }
+            
+            .title {
+                margin: .25em 0;
+                font-size: 3em;    
+            }
+            
+            .subtitle {
+                margin: .5em 0 1.5em;
+                font-size: 1.25em;    
+            }
+            
+            .intro {
+                margin: .5em 0 1.5em;
+                font-size: 1.25em;    
+            }
+            
+            .btn {
+                border: none;
+                padding: .75em 1.25em;
+                font-family: inherit;
+                font-size: 1em;
+                font-weight: bold;
+                color: white;
+                background-color: darkorchid;
+            }
+            
+            .description {
+                width: 100%;
+                padding: 1em 0;
+                font-size: 1.25em;
+                background-color: white;
+            }
+            
+            .testimonials {
+                width: 100%;
+                padding: 1em 0;
+                font-size: 1.25em;
+                background-color: plum;
+            }
+            
+            .testimonials-text {
+                float: left;
+                width: 75%;
+            }
+            
+            .testimonial {
+                margin-bottom: .75em;
+            }
+            
+            .testimonials-image {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+                <div class="container">
+                    <div class="header-image">
+                        <figure>
+                            <img src="/images/landing-page-book-cover.png" alt="Front cover">
+                        </figure>
+                    </div>
+                    <div class="header-info">
+                        <div class="surtitle">
+                            Coming Soonish!
+                        </div>
+                        <h1 class="title">The Web Designer</h1>
+                         <h3 class="subtitle">
+                             A story of HTML, CSS, and the big city
+                         </h3>
+                         <p class="intro">
+                             She knew HTML. She knew CSS. But did she know love? Read this destined-to-be-remaindered novel that <em>The New York Times Book Review</em> described as &ldquo;reasonably grammatical&rdquo; and the <em>Times Literary Supplement</em> called &ldquo;bathroom-worthy.&rdquo; Pre-order your paperback copy now for just $14.99.
+                         </p>
+                         <button class="btn" type="button">I Want It!</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="description">
+                <div class="container">
+                At High Falutin High, the arts high school in her home town, Daisy Fontana fell in love. Not with a boy, or even with a girl, for that matter, but with something altogether more interesting: web design. Instead of a BFF, she had CSS. Instead of singing and dancing with the other kids, she spent her time coding alone. But when she graduated and moved to the city to find a job, she knew everything about HTML, but nothing about life. Will the town eat her alive, or will she survive and rise to the top of the cutthroat world of coding websites? Daisy Fontana is a nerd heroine for our times, and <i>The Web Designer</i> tells her gripping tale.
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="container">
+                    <div class="testimonials-text">
+                        <p class="testimonial">“I’ve never seen a novel with so much HTML and CSS code. I mean there is a <em>lot</em> of code in this book! So much code. Code, code, code.” —T. J. Murphy, Nowhere, OK</p>
+                        <p class="testimonial">“I particularly loved the scenes where Daisy is by herself in her room writing HTML and CSS. It’s hard to make writing tags and properties interesting, and the author almost does it.” —M. Dash, Tightwad, MO</p>
+                        <p class="testimonial">“I couldn’t put it down. No, really, I could <em>not</em> physically put this book down. Thanks to the cheap cover stock, the book was literally glued to my hands. I had to go to the emergency room to get the thing off me.” —A. Pendergast, Walla Walla, WA</p>
+                    </div>
+                    <div class="testimonials-image">
+                        <img src="/images/testimonials.png" alt="Illustration of people talking">
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

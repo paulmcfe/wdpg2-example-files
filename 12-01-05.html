@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 10.1: Working with Flexbox Containers - How do you want the items arranged along the main axis?</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                outline: 3px solid orange;
+            }
+            
+            .item {
+                padding: .1em;
+                color: white;
+                font-family: "Verdana";
+                font-size: 5em;
+                text-align: center;
+                text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .itemA {
+                background-color: crimson;
+            }
+            
+            .itemB {
+                background-color: indigo;
+            }
+            
+            .itemC {
+                background-color: navy;
+            }
+            
+            .itemD {
+                background-color: darkgreen;
+            }
+            
+            .itemE {
+                background-color: saddlebrown;
+            }
+            
+            .itemF {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="item itemA">A</div>
+                <div class="item itemB">B</div>
+                <div class="item itemC">C</div>
+                <div class="item itemD">D</div>
+                <div class="item itemE">E</div>
+                <div class="item itemF">F</div>
+            </div>
+    </body>
+</html>

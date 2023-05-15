@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 9.1: Creating the Holy Grail Layout with Floats - The Complete Holy Grail Layout</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body {
+                max-width: 50em;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            header {
+                background-color: #6fa8dc;
+                padding: .25em 0;
+            }
+            header img {
+                float: left;
+                padding-left: 1em;
+            }
+            h1 {
+                float: left;
+                padding-left: .5em;
+                font-size: 2.5em;
+            }
+            nav {
+                text-transform: uppercase;
+                background-color: #e06666;
+                padding: .25em 0;
+            }
+            nav ul {
+                list-style-type: none;
+                padding-left: 1.25em;
+            }
+            nav li {
+                float: left;
+                padding-right: 1.5em;
+            }
+            main {
+                background-color: #b4a7d6;
+            }
+            article {
+                float: left;
+                padding: 1em;
+                width: 75%;
+                background-color: white;
+            }
+            aside {
+                float: left;
+                width: 25%;
+                padding: .5em;
+                background-color: #b4a7d6;
+            }
+            footer {
+                background-color: #b6d7a8;
+                padding: .25em 1em;
+            }
+            .self-clear::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="self-clear">
+                <img src="/images/your-logo-here.png" alt="Our logo">
+                <h1>Site Title</h1>
+            </header>
+            
+            <nav class="self-clear">
+                <ul>
+                    <li>Home</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </nav>    
+            
+            <main class="self-clear">
+                <article>
+                    <h2>
+                        Article Title
+                    </h2>
+                    <p>
+                    Article paragraph 1
+                    </p>
+                    <p>
+                    Article paragraph 2
+                    </p>      
+                </article>
+            
+                <aside>
+                    <h3>Sidebar Title</h3>
+                    <p>
+                        Sidebar paragraph
+                    </p>
+                </aside>  
+            </main>
+            
+            <footer class="self-clear">
+                <p>
+                    Footer paragraph
+                </p>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 5.3: Embedding Video in a Web Page - Example</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <video poster="/images/movie-poster.jpg"
+                   width="625"
+                   height="480"
+                   controls
+                   autoplay
+                   loop>
+                <source src="/videos/movie.mp4"
+                        type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                <source src="/videos/movie.webm"
+                        type='video/webm; codecs="VP8, vorbis"'>
+                <source src="/videos/movie.ogv"
+                        type='video/ogg; codecs="theora, vorbis"'>
+            </video>
+    </body>
+</html>

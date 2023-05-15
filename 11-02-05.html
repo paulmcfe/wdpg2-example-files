@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 9.1: Creating the Holy Grail Layout with Floats - Example</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body {
+                max-width: 50em;
+                font-family: Georgia, serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+            header {
+                padding: .25em;
+            }
+            header img {
+                float: left;
+                padding-left: 1em;
+                height: 4em;
+            }
+            h1 {
+                float: left;
+                margin-top: .15em;
+                padding-left: .5em;
+                font-size: 2.5em;
+            }
+            nav {
+                padding: .6em;
+                color: #222;
+                text-transform: uppercase;
+            }
+            nav ul {
+                list-style-type: none;
+                padding-left: 1.25em;
+            }
+            nav li {
+                float: left;
+                padding-right: 1.5em;
+            }
+            article {
+                float: left;
+                padding: 1em;
+                width: 75%;
+                vertical-align: top;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            article p:last-child {
+                margin-top: 1em;
+            }
+            aside {
+                float: left;
+                width: 25%;
+                vertical-align: top;
+                padding: .5em;
+            }
+            h3 {
+                font-size: 1.25em;
+                margin-top: .5em;
+                margin-bottom: .5em;
+            }
+            footer {
+                padding: .25em 1em;
+            }
+            .self-clear::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            /* BACKGROUND COLORS */
+            header {
+                background-color: #6fa8dc;
+                background-image: -webkit-linear-gradient(top, #cfe2f3 0%, #6fa8dc 100%);
+                background-image: linear-gradient(to bottom, #cfe2f3 0%, #6fa8dc 100%);
+            }
+            
+            nav {
+                background-color: #e06666;
+                background-image: -webkit-linear-gradient(top, #f4cccc 0%, #e06666 100%);
+                background-image: linear-gradient(to bottom, #f4cccc 0%, #e06666 100%);
+            
+            }
+            
+            article {
+                background-color: white;
+            }
+            
+            aside, main {
+                background-color: #b4a7d6;
+            }
+            
+            footer {
+                background-color: #b6d7a8;
+                background-image: -webkit-linear-gradient(top, #d9ead3 0%, #b6d7a8 100%);
+                background-image: linear-gradient(to bottom, #d9ead3 0%, #b6d7a8 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="self-clear">
+                <img src="/images/SD-logo.png" alt="Sematics Depot logo">
+                <h1>Semantics Depot</h1>
+            </header>
+            
+            <nav class="self-clear">
+                <ul>
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>    
+            
+            <main class="self-clear">
+                <article>
+                    <h2>
+                        Isn’t It Semantic?
+                    </h2>
+                    <p>
+                    No one can accuse Tim Berners-Lee of resting on his laurels. In 2001, the man who ten years earlier invented the World Wide Web, published an article in <i>Scientific American</i>. In that piece, Berners-Lee proposed an extension of the web that would bring “structure and meaningful content to web pages.” The idea was to “create an environment where software agents roaming from page to page can readily carry out sophisticated tasks for users.” The article was titled “The Semantic Web,” and thus was born a new vision of the future web.
+                    </p>
+                    <p>
+                        It’s a future that, 16 years later, has yet to arrive. Yes, we have search engine crawlers and screen readers and an army of bots getting up to who-knows-what. But the utopian dream of “computers and people working in cooperation” still feels a long way off. You can help fix that. When you design a web page, think <em>meaning</em>. When you go to use a <code>&lt;div&gt;</code> tag, ask yourself whether a semantic option—perhaps <code>&lt;p&gt;</code> or <code>&lt;section&gt;</code>—would be a better choice. Every time you use an HTML5 page-layout tag, the web becomes a little more machine-readable, a little more <em>semantic</em>. 
+                    </p>
+                    
+                </article>
+                <aside>
+                    <h3>Related Items</h3>
+                    <div>
+                        The Holy Grail
+                    </div>
+                    <div>
+                        Web 3.0
+                    </div>
+                    <div>
+                        Building a Bot
+                    </div>
+                    <div>
+                        Tim Berners-Lee
+                    </div>
+                
+                </aside>
+            </main>
+            <footer class="self-clear">
+                <p>
+                    &copy; 2017 Semantics Depot Ltd.
+                </p>
+            </footer>
+    </body>
+</html>

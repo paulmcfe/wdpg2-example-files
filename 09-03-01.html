@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 7.3: Applying a Simple Border - Example</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                width: 600px;
+                font-family: Verdana, sans-serif;
+                font-size: 1.2em;
+                line-height: 1.4;
+                margin: 0.5em;
+            }
+            
+            ul {
+                border: 1px solid black;
+                padding-top: .75em;
+                padding-bottom: .75em;
+                list-style-type: none;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            li {
+                display: inline-block;
+                padding-right: 1em;
+            }
+            
+            li:first-child {
+                padding-left: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+                <li>Home</li>
+                <li>Research Papers</li>
+                <li>Blog</li>
+                <li>Contact Info</li>
+            </ul>
+    </body>
+</html>
